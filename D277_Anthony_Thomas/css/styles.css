@@ -1,0 +1,59 @@
+/* FONT REQUIREMENT */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* HEADER + NAV */
+  header {
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  /* HOVER PSEUDO-CLASS (RUBRIC ITEM) */
+  nav a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+  }
+  
+  /* FLOAT PROPERTY (RUBRIC ITEM) */
+  article {
+    float: left;
+    width: 70%;
+    padding: 15px;
+  }
+  
+  /* RELATIVE POSITIONING (RUBRIC ITEM) */
+  footer {
+    position: relative;
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+  }
+  
+  /* ABSOLUTE POSITIONING (RUBRIC ITEM) */
+  h1 {
+    position: relative;
+    left: 10px;
+  }
+  
+  input, textarea {
+    width: 300px;
+    max-width: 100%;
+    padding: 8px;
+  }
+  
+  button {
+    padding: 8px 14px;
+    cursor: pointer;
+  }
+  

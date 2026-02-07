@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Illinois - Contact</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Illinois</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="springfield.html">Springfield</a> |
+      <a href="chicago.html">Chicago</a> |
+      <a href="naperville.html">Naperville</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>Contact Us</h2>
+      <p>Please complete the form below.</p>
+
+      <h3>Send Us a Message</h3>
+
+      <!-- FORM -->
+      <form onsubmit="return validateForm();">
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="confirmEmail">Confirm Email:</label><br>
+        <input type="email" id="confirmEmail" name="confirmEmail" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Anthony Thomas</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    function validateForm() {
+      const email = document.getElementById("email").value;
+      const confirmEmail = document.getElementById("confirmEmail").value;
+
+      if (email !== confirmEmail) {
+        alert("Email addresses do not match.");
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+
+</body>
+</html>
